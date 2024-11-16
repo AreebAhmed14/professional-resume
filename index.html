@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUMINATOR</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+
+      <div class="introPage">
+        <center>
+          <div class="blur"></div>
+                  <h1>WELCOME TO <span>RESUMINATOR</span>.</h1>
+        <h1>BUILD YOUR <span>PROFESSIONAL</span> RESUME</h1>
+        <button onclick="exitintro()">LET'S CREATE</button>
+      </center>
+
+
+      </div>
+      
+        <div class="forms">
+
+          <div class="firstpage">
+            <h1></h1>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name"><br>
+
+          <label for="profession">Profession:</label><br>
+          <input type="text" id="profession"><br>
+
+          <label for="email">Email:</label><br>
+          <input type="text" id="email"><br>
+
+          <label for="address">Address:</label><br>
+          <input type="text" id="address"><br>
+
+          <label for="phone">Contact No:</label><br>
+          <input type="number" id="phone"><br>
+
+          <label for="pic">Profile Picture:</label><br>
+         <input type="file" accept=".jpeg, .png, .jpg, .svg" id="pic"><br>
+
+          </div>
+
+          <div class="objectivepage">
+
+          <label for="obj">Objective:</label><br>
+          <textarea name="text" id="obj" rows="4"></textarea><br>
+          </div>
+
+
+            <div class="educationpage">
+          <div class="educationalarea">
+          <label for="education">Education:</label><br>
+          <textarea name="text" class="alleducationlist" id="education" rows="2"></textarea><br>
+        </div>
+        <button class="addbtn" id="addeducationarea">ADD</button>
+      </div>
+
+        <div class="experiencepage">
+        <div class="experiencearea">
+          <label for="experience">Experience:</label><br>
+          <textarea name="text" class="allexperiencelist" id="experience" rows="2"></textarea><br>
+        </div>
+        <button class="addbtn" id="addexperiencearea">ADD</button>
+      </div>
+
+        <div class="skillspage">
+        <div class="skillsarea">
+          <label for="skills">Skills:</label><br>
+          <input type="text" class="allskillslist" id="skills"><br>
+        </div>
+        <button class="addbtn" id="addskillsarea">ADD</button>
+      </div>
+          
+        <div class="langpage">
+        <div class="langsarea">
+          <label for="langs">Languages:</label><br>
+          <input type="text" class="alllangslist" id="langs"><br>
+        </div>
+        <button class="addbtn" id="addlangsarea">ADD</button>
+        <button id="genbtn">GENERATE</button>
+
+      </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------resume--------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------- -->
+
+
+    <div id="cv-content" class="cv">
+      <div class="cv-material">
+      <div class="sidebar">
+        <div class="stylish">
+        <div class="profilepic">
+          <img src="default.jpg" alt="" class="mainprofilepic">
+        </div>
+      <h1 class="main-name"></h1>
+      <p class="profession"></p>
+    </div>
+
+        <h1 class="heading">CONTACT</h1>
+        <ul class="skills">
+          <li class="lists phone"></li>
+          <li class="lists email"></li>
+          <li class="lists address"></li>
+        </ul>
+
+        <h1 class="heading">SKILLS</h1>
+        <ul class="skills skillslistmain">
+          
+        </ul>
+
+        <h1 class="heading">LANGUAGES</h1>
+        <ul class="skills langslistmain">
+          
+        </ul>
+      </div>
+
+
+      <!-- leftbar -->
+      <div class="left-bar">
+
+      <h1 class="objective-heading">OBJECTIVE</h1>
+      <p class="obj-para">
+      </p>
+
+
+      <h1 class="objective-heading">EDUCATION</h1>
+      <ul class="education-list allEduListMain">
+      </ul>
+
+      <h1 class="experience-heading">EXPERIENCE</h1>
+      <ul class="education-list allExpiListMain">
+      </ul>
+
+    </div>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  </body>
+</html>
