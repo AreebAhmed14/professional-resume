@@ -139,3 +139,43 @@ function exitintro(){
     document.querySelector(".introPage").style.display="none"
     document.querySelector(".firstpage").style.display="block"
 }
+function exitfisrt(){
+    document.querySelector(".firstpage").style.display="none"
+    document.querySelector(".objectivepage").style.display="block"
+}
+function exitsecond(){
+    document.querySelector(".objectivepage").style.display="none"
+    document.querySelector(".educationpage").style.display="block"
+}
+function exitthird(){
+    document.querySelector(".educationpage").style.display="none"
+    document.querySelector(".experiencepage").style.display="block"
+}
+function exitforth(){
+    document.querySelector(".experiencepage").style.display="none"
+    document.querySelector(".skillspage").style.display="block"
+}
+function exitfifth(){
+    document.querySelector(".skillspage").style.display="none"
+    document.querySelector(".langpage").style.display="block"
+}
+function previousPageobj(){
+    document.querySelector(".firstpage").style.display="block"
+    document.querySelector(".objectivepage").style.display="none"
+}
+function previousPageedu(){
+    document.querySelector(".objectivepage").style.display="block"
+    document.querySelector(".educationpage").style.display="none"
+}
+function previousPageexpi(){
+    document.querySelector(".educationpage").style.display="block"
+    document.querySelector(".experiencepage").style.display="none"
+}
+function previousPageskills(){
+    document.querySelector(".experiencepage").style.display="block"
+    document.querySelector(".skillspage").style.display="none"
+}
+function previousPagelang(){
+    document.querySelector(".skillspage").style.display="block"
+    document.querySelector(".langpage").style.display="none"
+}

@@ -27,7 +27,7 @@
         <div class="forms">
 
           <div class="firstpage">
-            <h1></h1>
+            <h1>PERSONAL <span>INFORMATION</span></h1>
           <label for="name">Name:</label><br>
           <input type="text" id="name"><br>
 
@@ -45,53 +45,84 @@
 
           <label for="pic">Profile Picture:</label><br>
          <input type="file" accept=".jpeg, .png, .jpg, .svg" id="pic"><br>
+         <div class="btns">
+          <!-- <button onclick="previousPage()">BACK</button> -->
+          <button onclick="exitfisrt()">NEXT</button>
+ 
+         </div>
 
           </div>
 
           <div class="objectivepage">
-
-          <label for="obj">Objective:</label><br>
-          <textarea name="text" id="obj" rows="4"></textarea><br>
+            <h1>YOUR <span>OBJECTIVE</span></h1>
+          <!-- <label for="obj">Objective:</label><br> -->
+          <textarea name="text" id="obj" rows="7"></textarea><br>
+          <div class="objbtns">
+          <button onclick="previousPageobj()">BACK</button>
+          <button onclick="exitsecond()">NEXT</button>
+          </div>
           </div>
 
 
             <div class="educationpage">
           <div class="educationalarea">
-          <label for="education">Education:</label><br>
+            <h1>EDUCATIONAL <span>DETAIL</span></h1>
+          <!-- <label for="education">Education:</label><br> -->
           <textarea name="text" class="alleducationlist" id="education" rows="2"></textarea><br>
         </div>
         <button class="addbtn" id="addeducationarea">ADD</button>
-      </div>
+        <div class="edubtns">
+          <button onclick="previousPageedu()">BACK</button>
+          <button onclick="exitthird()">NEXT</button>
+        </div>
+      </div> 
 
         <div class="experiencepage">
         <div class="experiencearea">
-          <label for="experience">Experience:</label><br>
+          <h1>EXPERIENCE <span>DETAIL</span></h1>
+
+          <!-- <label for="experience">Experience:</label><br> -->
           <textarea name="text" class="allexperiencelist" id="experience" rows="2"></textarea><br>
         </div>
         <button class="addbtn" id="addexperiencearea">ADD</button>
+        <div class="edubtns">
+          <button onclick="previousPageexpi()">BACK</button>
+          <button onclick="exitforth()">NEXT</button>
+        </div>
+        
       </div>
 
         <div class="skillspage">
         <div class="skillsarea">
-          <label for="skills">Skills:</label><br>
+          <h1>ADD <span>SKILLS</span></h1>
+
+          <!-- <label for="skills">Skills:</label><br> -->
           <input type="text" class="allskillslist" id="skills"><br>
         </div>
         <button class="addbtn" id="addskillsarea">ADD</button>
+        <div class="edubtns">
+          <button onclick="previousPageskills()">BACK</button>
+          <button onclick="exitfifth()">NEXT</button>
+        </div>
       </div>
           
         <div class="langpage">
         <div class="langsarea">
-          <label for="langs">Languages:</label><br>
+          <h1>ADD <span>LANGUAGES</span></h1>
+          <!-- <label for="langs">Languages:</label><br> -->
           <input type="text" class="alllangslist" id="langs"><br>
         </div>
         <button class="addbtn" id="addlangsarea">ADD</button>
-        <button id="genbtn">GENERATE</button>
+        <div class="edubtns">
+          <button onclick="previousPagelang()">BACK</button>
+          <button id="genbtn">SUBMIT</button>
+        </div>
+        
 
       </div>
 
 
-        </div>
-    </div>
+
 
 
     <!-- ------------------------------------------------------------------------------------------------- -->
